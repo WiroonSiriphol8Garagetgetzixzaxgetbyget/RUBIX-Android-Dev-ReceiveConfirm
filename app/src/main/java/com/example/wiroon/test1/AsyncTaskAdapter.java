@@ -1,5 +1,6 @@
 package com.example.wiroon.test1;
 
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -17,7 +18,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Created by kantapon on 11/1/2561.
+ * Created by Rattasart on 07/09/2561.
  */
 
 public class AsyncTaskAdapter extends AsyncTask<String, Void, Object> {

@@ -70,15 +70,12 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
 
-            <!--<Spinner-->
-                <!--android:id="@+id/spinner_date"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent" />-->
-
-            <com.jaredrummler.materialspinner.MaterialSpinner
-                android:id="@+id/spinner_date"
+            <Spinner
+                android:id="@+id/spn_date"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
+            </Spinner>
+
         </LinearLayout>
 
 

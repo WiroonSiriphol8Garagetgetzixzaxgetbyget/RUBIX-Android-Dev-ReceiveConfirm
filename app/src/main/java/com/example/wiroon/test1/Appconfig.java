@@ -1,5 +1,6 @@
 package com.example.wiroon.test1;
 
+
 import android.content.Context;
 
 import org.json.JSONArray;
@@ -9,7 +10,7 @@ import org.json.JSONObject;
 import java.io.Serializable;
 
 /**
- * Created by kantapon on 24/1/2561.
+ * Created by Rattasart on 07/09/2561.
  */
 
 public class Appconfig implements Serializable {
@@ -26,7 +27,7 @@ public class Appconfig implements Serializable {
     Context context;
     boolean connect = false;
     //Setting data for authen
-    public void setup(String ar) throws JSONException {
+    public void setup(String ar){
         JSONObject tmp = null;
         try {
             tmp = new JSONObject(new JSONArray(ar).get(0).toString());
@@ -38,11 +39,11 @@ public class Appconfig implements Serializable {
             UserName =tmp.getString("UserName");
             Password =tmp.getString("Password");
             ServiceURL =tmp.getString("ServiceURL");
-            URL_Data = "http://192.168.128.249/RUBIXLITEWeb/";
+            URL_Data = "http://192.168.128.249/RUBIXBASEPOCWebAPI/";
 
             connect = true;
         } catch (JSONException e) {
-            throw e;
+
         }
     }
     public boolean checkstate(){

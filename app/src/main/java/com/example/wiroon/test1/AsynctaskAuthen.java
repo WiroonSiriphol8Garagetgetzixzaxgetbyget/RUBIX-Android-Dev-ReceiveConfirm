@@ -16,12 +16,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 
-public class AsynctaskAuthen extends AsyncTask<String, Void, Object> {
+public class AsyncTaskAuthen extends AsyncTask<String, Void, Object> {
     public String Parameter = "";
     public int CheckWork;
     public Appconfig config = new Appconfig();
     Context context;
-    public AsynctaskAuthen(Object para) {
+    public AsyncTaskAuthen(Object para) {
         Parameter = para.toString();
     }
     @Override
